@@ -8,8 +8,9 @@
       <th>Name</th>
       <th>Breed</th>
       <th>Birthdate</th>
-      <th>Client</th>
       <th>Number of appointments</th>
+      <th>Client</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,8 +21,8 @@
         <td><%= pet.name %></td>
         <td><%= pet.breed %></td>
         <td><%= pet.birthdate %></td>
-
-        <td><%= pet.client_id %></td>
+        <td><%= pet.number_of_appointments %></td>
+        <td><%= pet.get_client_name %></td>
         <td><%= link_to 'Show', pet %></td>
         <td><%= link_to 'Edit', edit_pet_path(pet) %></td>
         <td><%= link_to 'Destroy', pet, method: :delete, data: { confirm: 'Are you sure?' } %></td>

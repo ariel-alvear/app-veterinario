@@ -9,8 +9,8 @@
       <th>Height (Cm)</th>
       <th>Diagnosis</th>
       <th>Description</th>
-      <th>Pet</th>
       <th>Appointment</th>
+      <th>Pet</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -23,7 +23,7 @@
         <td><%= pet_history.diagnosis %></td>
         <td><%= pet_history.description %></td>
         <td><%= pet_history.appointment %></td>
-        <td><%= pet_history.pet_id %></td>
+        <td><%= pet_history.get_pet_name %></td>
         <td><%= link_to 'Show', pet_history %></td>
         <td><%= link_to 'Edit', edit_pet_history_path(pet_history) %></td>
         <td><%= link_to 'Destroy', pet_history, method: :delete, data: { confirm: 'Are you sure?' } %></td>
