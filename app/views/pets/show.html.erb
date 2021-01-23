@@ -11,13 +11,28 @@
 </p>
 
 <p>
-  <strong>Birthdate:</strong>
+  <strong>Birth date:</strong>
   <%= @pet.birthdate %>
 </p>
 
 <p>
-  <strong>Client:</strong>
-  <%= @pet.client_id %>
+  <strong>Average weight:</strong>
+  <%= @pet.average_weight %>
+</p>
+
+<p>
+  <strong>Average height:</strong>
+  <%= @pet.average_height %>
+</p>
+
+<p>
+  <strong>Max weight:</strong>
+  <%= @pet.max_weight %>
+</p>
+
+<p>
+  <strong>Max height:</strong>
+  <%= @pet.max_height %>
 </p>
 
 <%= link_to 'Edit', edit_pet_path(@pet) %> |
