@@ -32,6 +32,12 @@
   </div>
 
   <div class="field">
+    <%= form.label :appointment %>
+    <%= form.date_field :appointment %>
+  </div>
+
+
+  <div class="field">
       <select name="pet_history[pet_id]">
           <% @pets.each do |pet| %>
               <option value="<%= pet.id %>"><%= pet.name %></option>

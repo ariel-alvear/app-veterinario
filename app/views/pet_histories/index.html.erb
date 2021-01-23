@@ -10,6 +10,7 @@
       <th>Diagnosis</th>
       <th>Description</th>
       <th>Pet</th>
+      <th>Appointment</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -21,6 +22,7 @@
         <td><%= pet_history.height %></td>
         <td><%= pet_history.diagnosis %></td>
         <td><%= pet_history.description %></td>
+        <td><%= pet_history.appointment %></td>
         <td><%= pet_history.pet_id %></td>
         <td><%= link_to 'Show', pet_history %></td>
         <td><%= link_to 'Edit', edit_pet_history_path(pet_history) %></td>
