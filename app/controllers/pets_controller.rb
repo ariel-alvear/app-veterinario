@@ -15,15 +15,18 @@ class PetsController < ApplicationController
   # GET /pets/new
   def new
     @pet = Pet.new
+    @clients = Client.all
   end
 
   # GET /pets/1/edit
   def edit
+    @clients = Client.all
   end
 
   # POST /pets
   # POST /pets.json
   def create
+    @clients = Client.all
     @pet = Pet.new(pet_params)
 
     respond_to do |format|
@@ -40,6 +43,7 @@ class PetsController < ApplicationController
   # PATCH/PUT /pets/1
   # PATCH/PUT /pets/1.json
   def update
+    @clients = Client.all
     respond_to do |format|
       if @pet.update(pet_params)
         format.html { redirect_to @pet, notice: "Pet was successfully updated." }
